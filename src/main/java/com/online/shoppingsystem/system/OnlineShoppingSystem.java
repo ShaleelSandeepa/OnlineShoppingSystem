@@ -258,7 +258,7 @@ public class OnlineShoppingSystem {
             // get connection
             conn = DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
 
-            // Prepare the stored procedure call
+            // Prepare the function call
             String sql = "{ ? = call GetTotalOrderAmountByOrder(?)}";
             CallableStatement callableStatement = conn.prepareCall(sql);
 
